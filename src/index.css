@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020617; /* Slate 950 */
+  /* Adds a modern, subtle blue/cyan glow to the top of the screen */
+  background-image: radial-gradient(circle at 50% -20%, rgba(34, 211, 238, 0.15), rgba(2, 6, 23, 1) 60%);
+  background-attachment: fixed;
+  color: #cbd5e1; /* Slate 300 */
+}
+
+/* Custom scrollbar for a sleek feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
